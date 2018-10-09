@@ -32,7 +32,6 @@ public class ClientesResource {
     
     @PostMapping
     public void salvar(Cliente cli){
-        cli.setNome(JOptionPane.showInputDialog("informe o nome"));
         clientes.save(cli);
         
     }
